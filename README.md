@@ -4,12 +4,12 @@ knapsack is a free, open source package for solving knapsack problems. It was or
 
 Base value objects are parametrized response functions in form:
 
-$f(x) = \frac{cap}{(1 + (\frac{x}{cap * EC50})^-steep)}$
+![](CodeCogsEqn.gif)
 
 See [example.py](example.py) for demo.
 
 You can write your own response functions, but they must have following methods properties:
-* `__call__` method
+* `__call__` method, which will return single numeric value
 * `fun` property, that will return callable that represent your function
 * `derivative` property, that will return callable that represent your function derivative
 
